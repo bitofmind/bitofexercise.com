@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bit of Exercise — the iPhone app that keeps you going</title>
+<meta name="description" content="Bit of Exercise motivates active iPhone users with fully automated recording, flexible workouts and detailed reviewing — all on the phone.">
+<link rel="icon" href="icon.png" type="image/png">
+<link rel="apple-touch-icon" href="icon.png">
+<meta property="og:title" content="Bit of Exercise">
+<meta property="og:description" content="The iPhone app that keeps you going.">
+<meta property="og:image" content="screens.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #272727;
+    --muted: #5c5c5c;
+    --accent: #e8402f;
+    --rule: #e8e8e8;
+    --maxw: 900px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #fff;
+    color: var(--ink);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 28px 0 8px; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand img { width: 52px; height: 52px; border-radius: 12px; }
+  .brand span { font-size: 22px; font-weight: 400; }
+
+  .hero { text-align: center; padding: 26px 0 8px; }
+  .hero h1 {
+    font-weight: 300;
+    font-size: clamp(30px, 6vw, 52px);
+    line-height: 1.12;
+    margin: 0 0 14px;
+  }
+  .hero h1 strong { font-weight: 700; color: var(--accent); }
+  .hero .tagline { font-size: clamp(18px, 2.6vw, 23px); color: var(--muted); font-style: italic; margin: 0; }
+
+  .shot { display: block; width: 100%; height: auto; margin: 30px 0 8px; }
+
+  .lede p { font-size: clamp(17px, 2.2vw, 21px); }
+
+  .cta { text-align: center; margin: 40px 0 8px; }
+  .cta img { width: 220px; max-width: 60%; height: auto; }
+  .cta a { display: inline-block; transition: opacity .2s; }
+  .cta a:hover, .cta a:focus-visible { opacity: .82; }
+
+  h2 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 34px 46px;
+    margin: 46px 0;
+    padding-top: 34px;
+    border-top: 1px solid var(--rule);
+  }
+  .features ul { margin: 0; padding-left: 1.1em; }
+  .features li { margin-bottom: 8px; font-size: 17px; }
+
+  blockquote {
+    margin: 0;
+    padding: 0 0 0 20px;
+    border-left: 3px solid var(--accent);
+    font-size: 18px;
+    color: var(--ink);
+  }
+  blockquote cite { display: block; margin-top: 10px; font-size: 15px; color: var(--muted); font-style: normal; }
+  .reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 34px;
+    margin: 46px 0;
+    padding-top: 34px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .privacy { color: var(--muted); font-size: 17px; }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 46px;
+    padding: 26px 0 46px;
+    color: var(--muted);
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    justify-content: space-between;
+  }
+  a { color: var(--accent); }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <img src="icon.png" alt="Bit of Exercise app icon">
+      <span>Bit of Exercise</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Every <strong>Bit of Exercise</strong> Counts</h1>
+    <p class="tagline">“the iPhone app that keeps you going”</p>
+  </section>
+
+  <section class="lede">
+    <p>Bit of Exercise strives to motivate active iPhone users to improve their training
+    by introducing fully automated recording, flexible creation of workouts and detailed
+    reviewing of results — all on the phone.</p>
+
+    <img class="shot" src="screens.png"
+         alt="Bit of Exercise on iPhone: the diary, a recorded run with map and statistics, and the workout segment editor">
+
+    <p>Whether you are running, walking or cycling, voice reports will guide you through
+    your workout and motivate you to work harder by comparing your results with previous
+    activities. Furthermore, your activities will automatically start recording when you
+    leave your current location and end when you return — no need to fiddle with your
+    phone during your workouts.</p>
+
+    <p>Study your progress and results in detail on your iPhone, both during and after
+    your workout. Graphs and maps can be zoomed, and you can easily navigate to any point
+    along your activity for further examination and comparison to your reference. A wealth
+    of data and statistics are collected about your activities. It’s almost as if you had
+    a personal trainer — in your iPhone.</p>
+
+    <p>Bit of Exercise allows you to freely assemble workouts with several segments, such
+    as interval, multi-sport and hill training workouts. Each individual segment can be set
+    to start and end based on various criteria such as reaching a certain location or
+    distance. This allows you to grow in your training and get your workouts tailored to
+    you and your surroundings.</p>
+
+    <p class="privacy">We respect your privacy by only storing your data locally on your
+    iPhone. No account is required nor do you have to visit a web-site to fully access
+    your data.</p>
+  </section>
+
+  <div class="cta">
+    <a href="https://apps.apple.com/app/id512448531">
+      <img src="appstore.png" alt="Download on the App Store">
+    </a>
+  </div>
+
+  <section class="features">
+    <div>
+      <h2>Powerful dashboard</h2>
+      <ul>
+        <li>Use the same feature rich dashboard both for recording and reviewing.</li>
+        <li>Examine your exercise data in detail using displays, graphs, maps and splits.</li>
+        <li>Configure displays and graphs to your liking and switch between day and night mode.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Flexible workouts &amp; segments</h2>
+      <ul>
+        <li>Set up criteria to automate the start and end of activities and segments.</li>
+        <li>Use basic criteria based on distance, duration or reaching a location.</li>
+        <li>Or use smart criteria such as start when leaving and end when reaching activity start.</li>
+        <li>Freely combine segments into arbitrary complex workouts.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Diary</h2>
+      <ul>
+        <li>Get an overview of past and upcoming activities.</li>
+        <li>Track measurements such as your body weight and waist.</li>
+        <li>View weekly, monthly and yearly statistics and graphs.</li>
+        <li>Filter your activities and statistics.</li>
+        <li>Select activities to perform actions such as export.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Fully automated recording</h2>
+      <ul>
+        <li>Get guidance and reports of your progress from spoken announcements.</li>
+        <li>Watch your progress and how you compare with your reference in displays, graphs and maps in real-time.</li>
+        <li>Let auto-pause detection remove non-active time from your activities.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Truly detailed reviewing</h2>
+      <ul>
+        <li>Use the progress bar to move your position to any part of your activity for closer examination.</li>
+        <li>Zoom in on maps, graphs and splits to reveal more information.</li>
+        <li>Compare your results with your reference.</li>
+        <li>All data stored locally on your iPhone, and backed up by iCloud. No need to login or visit any web-site.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Convenient sharing, import &amp; export</h2>
+      <ul>
+        <li>Share your results with friends at RunKeeper, Strava and dailymile.</li>
+        <li>Import your previous exercise history from RunKeeper, Strava and dailymile.</li>
+        <li>Import and export your exercise data using popular exchange formats such as GPX, TCX, KML and CSV.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Rich annotations</h2>
+      <ul>
+        <li>Annotate your activities with notes and how you felt.</li>
+        <li>Tag your activities to keep track of equipment, events and conditions.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Broad sensor support</h2>
+      <ul>
+        <li>Benefit from advanced GPS filtering.</li>
+        <li>Improve your performance by using the built-in pedometer to measure your cadence and stride.</li>
+        <li>Connect your ANT+ and Bluetooth 4.0 BTLE sensors to measure your heart rate, bike cadence and distance.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Evaluation</h2>
+      <ul>
+        <li>Download and evaluate Bit of Exercise for free.</li>
+        <li>The demo version has a limit on the number of activities that can be recorded.</li>
+        <li>Unlock the unlimited version using an in-app purchase.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Requirements</h2>
+      <ul>
+        <li>iPhone 4S or later</li>
+        <li>iOS 9.1 or later</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <blockquote>
+      “Fantastic app and believe me — I’ve tried them all. The ghost-ride function is among
+      the best and the app has some real killer features that stands out especially if you
+      often take the same routes. On some routes you may choose automated start/stop on
+      passing GPS points. It also predicts your route based on previous patterns and the
+      time of day and week. Makes regular use very easy. Use it and you’ll never regret it.”
+      <cite>— pss-peter, App Store Review</cite>
+    </blockquote>
+
+    <blockquote>
+      “Using this app makes me more competitive because it compares your exercise with
+      previous exercises so it makes me work harder. The announcements make me feel like I
+      have a personal trainer! This is a brilliant app.”
+      <cite>— jenbee6, App Store Review</cite>
+    </blockquote>
+  </section>
+
+  <footer>
+    <span>Copyright © 2022, Bit of Mind</span>
+    <a href="mailto:info@bitofexercise.com">info@bitofexercise.com</a>
+  </footer>
+
+</div>
+
+</body>
+</html>
